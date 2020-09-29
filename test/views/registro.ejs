@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Registro Usuario</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+
+
+  <table>
+    <th>Nombre</th>
+    <th>Apellidos</th>
+    <th>Email</th>
+    <th>Contrase&ntilde;a</th>
+
+    <% for (var i in usuarios) { %>
+    <tr>
+      <td><%= usuarios[i].name %></td>
+      <td><%= usuarios[i].lastname %></td>
+      <td><%= usuarios[i].email %></td>
+      <td><%= usuarios[i].password %></td>
+    </tr>
+    <% } %>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="contenedor-2"> <button class="btn-1" onclick="history.back()">Volver</button></td>
+    </tr>
+    
+  </table>
+</body>
+</html>

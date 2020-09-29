@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <meta name="author" content="Gabriela Paz">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+
+  <h1>Formulario de registro</h1>
+  <section class="contenedor">
+  <form class="form-register" method="POST" action="users">
+    <div class="contenedor-inputs">
+      <input type="text" id="name" name="name" placeholder="Nombre" class="inputcss">
+      <input type="text" id="lastname" name="lastname" placeholder="Apellidos" class="inputcss">
+      <input type="email" id="email" name="email" placeholder="Correo" class="inputcss">
+
+      <input type="password" id="password" name="password" placeholder="Contraseña" class="inputcss">
+
+      <input type="submit" value="Registrar" class="btn-enviar">
+
+    </div>
+  </form>
+  <form method="GET" action="/registroUser">
+    <input type="submit" value="Usuarios Registrados"  class="btn-enviar">
+  </form>
+</section>
+  </br>
+  </br>
+
+</body>
+
+</html>
